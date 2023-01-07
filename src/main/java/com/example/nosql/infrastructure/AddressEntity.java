@@ -10,12 +10,8 @@ import lombok.Setter;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class UserEntity extends BaseEntity<Integer> {
+public class AddressEntity extends BaseEntity<Integer> {
 
-    private String username;
-    private String password;
-    private String name;
-    private String family;
-    private String age;
-    private AddressEntity addressEntity;
+    private String streetName;
+    private String zipCode;
 }
