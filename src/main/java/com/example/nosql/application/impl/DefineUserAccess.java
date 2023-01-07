@@ -4,6 +4,6 @@ import com.example.nosql.application.UserManagement;
 import org.springframework.stereotype.Service;
 
 @Service
-public class UserManagementImpl implements UserManagement {
+public class DefineUserAccess implements UserManagement {
 
 }
