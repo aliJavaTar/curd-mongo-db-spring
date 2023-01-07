@@ -1,7 +1,5 @@
 package com.example.nosql.domain;
 
-public class Address {
+public record Address(String streetName, String zipCode) {
 
-    private String streetName;
-    private String zipCode;
 }
