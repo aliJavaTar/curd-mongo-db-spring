@@ -1,25 +1,25 @@
 package com.example.nosql.domain;
 
 public class User {
-    private String username;
-    private String password;
-    private Address address;
+    private final Username username;
+    private final Password password;
+    private final Address address;
 
-    private User(String username, String password, Address address) {
+    private User(Username username, Password password, Address address) {
         this.username = username;
         this.password = password;
         this.address = address;
     }
 
-    public static User createUser(String username, String password, Address address)
-    {
-        return new User(username,password,address);
+    public static User createUser(Username username, Password password, Address address) {
+        return new User(username, password, address);
     }
-    public String getUsername() {
+
+    public Username getUsername() {
         return username;
     }
 
-    public String getPassword() {
+    public Password getPassword() {
         return password;
     }
 
