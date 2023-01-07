@@ -1,6 +1,6 @@
-package com.example.nosql.infrastructure;
+package com.example.nosql.infrastructure.entity;
 
-import com.example.nosql.infrastructure.base.BaseEntity;
+import com.example.nosql.infrastructure.entity.base.BaseEntity;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;

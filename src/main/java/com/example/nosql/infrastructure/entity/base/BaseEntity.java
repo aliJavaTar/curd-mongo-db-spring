@@ -1,4 +1,4 @@
-package com.example.nosql.infrastructure.base;
+package com.example.nosql.infrastructure.entity.base;
 
 public class BaseEntity<ID> {
     private ID id;

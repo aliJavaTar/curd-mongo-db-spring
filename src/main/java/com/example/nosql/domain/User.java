@@ -1,5 +1,7 @@
 package com.example.nosql.domain;
 
+import com.example.nosql.infrastructure.entity.UserRequest;
+
 public class User {
     private final Username username;
     private final Password password;
@@ -11,8 +13,12 @@ public class User {
         this.address = address;
     }
 
-    public static User createUser(Username username, Password password, Address address) {
-        return new User(username, password, address);
+    public static User createUser(UserRequest userRequest) {
+
+        Username validUsername = new Username(userRequest.getUsername().username());
+        Password validPassword = new Password(userRequest.getPassword().password());
+        //todo vlidation done and save user
+        return null;
     }
 
     public Username getUsername() {
