@@ -15,8 +15,8 @@ public class User {
 
     public static User createUser(UserRequest userRequest) {
 
-        Username validUsername = new Username(userRequest.getUsername().username());
-        Password validPassword = new Password(userRequest.getPassword().password());
+        Username validUsername = new Username(userRequest.getUser().getUsername());
+        Password validPassword = new Password(userRequest.getUser().getPassword());
         //todo vlidation done and save user
         return null;
     }

@@ -1,19 +1,16 @@
 package com.example.nosql.infrastructure.entity;
 
 import com.example.nosql.domain.Address;
-import com.example.nosql.domain.Password;
-import com.example.nosql.domain.Username;
 import lombok.Data;
 
 import java.util.Optional;
 
 @Data
 public class UserRequest {
-    private Username username;
-    private Password password;
-    private Address address;
+    private UserEntity user;
+    private AddressEntity address;
 
-    public Optional<Address> getAddress() {
+    public Optional<AddressEntity> getAddress() {
         return Optional.ofNullable(address);
     }
 }
